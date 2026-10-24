@@ -20,7 +20,7 @@ Aplikasi semantic search yang mengambil deskripsi buku sebagai sumber dokumen, m
 
 ### Jumlah Data
 
-Dataset yang digunakan dalam aplikasi ini berjumlah 50 data buku yang seleksi dan dikategorikan dari dataset asli openlibrary_work_with_descriptions.jsonl, lalu disimpan dalam file data.json. Data yang mencakup judul, deskripsi, dan kategori buku.
+Dataset yang digunakan dalam aplikasi ini berjumlah 50 data buku yang seleksi dan dikategorikan dari dataset asli [openlibrary_work_with_descriptions.json](https://www.kaggle.com/datasets/abdallamohamed312/open-library-works-with-descriptions-jsonl), lalu disimpan dalam file data.json. Data yang diseleksi mencakup judul, deskripsi, dan kategori buku.
 
 ### Kategori yang Digunakan
 
