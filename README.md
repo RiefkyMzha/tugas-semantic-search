@@ -62,13 +62,13 @@ Jelaskan menggunakan bahasa kalian sendiri bagaimana flow berikut bekerja:
 ```text
 data.json
     ↓
-Validasi dan transformasi dokumen (text = "title. description")
+Validasi dan transformasi dokumen
     ↓
-SentenceTransformer (model dimuat sekali saat startup)
+SentenceTransformer
     ↓
 Embedding vector
     ↓
-Qdrant collection (vector + payload, upsert agar tidak duplikat)
+Qdrant collection
 ```
 
 **Pencarian:**
@@ -77,7 +77,7 @@ User Query
     ↓
 Validasi query dan top_k
     ↓
-SentenceTransformer (query → vector)
+SentenceTransformer
     ↓
 Qdrant cosine similarity search
     ↓
