@@ -322,7 +322,7 @@ buku tentang kecerdasan buatan dan machine learning
 ## Top-K = 1
 
 Actual Result:
-
+```json
 {
   "query": "buku tentang kecerdasan buatan dan machine learning",
   "top_k": 1,
@@ -336,13 +336,13 @@ Actual Result:
     }
   ]
 }
-
+```
 ------------------------------------------------------
 
 ## Top-K = 3
 
 Actual Result:
-
+```json
 {
   "query": "buku tentang kecerdasan buatan dan machine learning",
   "top_k": 3,
@@ -370,13 +370,13 @@ Actual Result:
     }
   ]
 }
-
+```
 ------------------------------------------------------
 
 ## Top-K = 5
 
 Actual Result:
-
+```json
 {
   "query": "buku tentang kecerdasan buatan dan machine learning",
   "top_k": 5,
@@ -418,7 +418,7 @@ Actual Result:
     }
   ]
 }
-
+```
 ------------------------------------------------------
 
 ### Apa perubahan yang kalian lihat ketika nilai Top-K diperbesar?
