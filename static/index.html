@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Search Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header-inner">
+                <h1 class="brand">Semantic Search Buku</h1>
+                <p class="tagline">Cari buku berdasarkan makna, bukan hanya kata kunci.</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="panel index-panel">
+                <h2 class="panel-title">1. Index Dataset</h2>
+                <button type="button" class="btn btn-primary" id="btnIndex">Index Dataset ke Qdrant</button>
+                <span id="idxStatus" class="status"></span>
+            </section>
+
+            <section class="panel search-panel">
+                <h2 class="panel-title">2. Cari Buku</h2>
+                <form id="formSearch" class="search-form">
+                    <div class="input-group">
+                        <label for="queryInput" class="field-label">Kueri pencarian</label>
+                        <input type="text" id="queryInput"
+                            placeholder="Contoh: cerita tentang raja yang ingin kembali ke kerajaannya" required>
+                        <span class="field-hint">Masukkan kueri dalam bahasa alami, tidak harus sama persis dengan teks
+                            dataset.</span>
+                    </div>
+                    <div class="input-group input-group-compact">
+                        <label for="topK" class="field-label">Jumlah hasil</label>
+                        <select id="topK" name="top_k">
+                            <option value="1">1 hasil</option>
+                            <option value="3" selected>3 hasil</option>
+                            <option value="5">5 hasil</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-search" id="btnSearch">Cari</button>
+                </form>
+            </section>
+
+            <section id="errorBox" class="error-box hidden" role="alert"></section>
+
+            <section id="resultsBox" class="results-panel hidden">
+                <div id="resultsInfo" class="results-info"></div>
+                <div id="resultsList" class="results-list"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <p class="footer-text">&copy; Semantic Search Buku. Dibuat untuk memenuhi tugas Infinite Learning.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
